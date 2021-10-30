@@ -7,11 +7,15 @@ const Climate = ({temperature, humidity}) =>{
     const [handleClimate, sethadleClimate] = useState(temperature)
 
     const temperaturePlus = () =>{
-        sethadleClimate(handleClimate + 1)
+        if (handleClimate != 29 ){
+            sethadleClimate(handleClimate + 1)
+        }
     }
 
     const temperatureMinus = () =>{
-        sethadleClimate(handleClimate - 1)
+        if (handleClimate != 17){
+            sethadleClimate(handleClimate - 1)
+        }
     }
 
     return(
