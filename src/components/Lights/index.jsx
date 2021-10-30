@@ -5,10 +5,11 @@ const Lights = ({light}) =>{
     
     return(
         <>
-            {light.map(roomLight => {return <div className="light" key={roomLight.name}>
+            <div className="lights">
+            {light.map(roomLight => {return <div className="lightMap" key={roomLight.name}>
                     {<Light name={roomLight.name} 
                             state={roomLight.state} />}</div>})}
-                                       
+            </div>                          
         </>
         
     )

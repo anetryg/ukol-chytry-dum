@@ -27,14 +27,14 @@ const Light = ({name, state}) =>{
     return(
         
         <>
-            <div className="light">
+            <div className="light" onClick={handleLight ? off : on}>
 				<div className="light__icon">
                     <img src={handleLight ? lightOnImage : lightOffImage}/>
 				</div>
                 <div className="light__name">
-                    <button className="button" onClick={handleLight ? off : on}>
+                    <p >
                         {name}
-                    </button>		
+                    </p>		
 				</div>
             </div>
         </>
