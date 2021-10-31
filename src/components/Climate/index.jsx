@@ -13,9 +13,7 @@ const Climate = ({temperature, humidity}) =>{
     }
 
     const temperatureMinus = () =>{
-        if (handleClimate != 17){
-            sethadleClimate(handleClimate - 1)
-        }
+        if (handleClimate != 17){sethadleClimate(handleClimate - 1)}
     }
 
     return(
